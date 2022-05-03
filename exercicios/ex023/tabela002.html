@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -21,7 +22,7 @@
         }
 
         thead, tfoot {
-            background-color: black;
+            background-color: #383838;
             color: white;
         }
 
@@ -32,7 +33,11 @@
             background-color: lightgray;
         }
 
-        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
 
         tbody > tr:nth-child(2n){
             background-color: lightgray;
